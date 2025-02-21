@@ -9,7 +9,7 @@ function App() {
 		try {
 			setError('')
 			const parsedValue = JSON.parse(value)
-			const res = await fetch('http://localhost:3000/bfhl', {
+			const res = await fetch('https://praiya-node.onrender.com/bfhl', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ function App() {
 	}
 
 	return (
-		<div style={{ display: 'flex', flexDirection: 'column', width: '400px' }}>
+		<div style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
 			<input
 				type='text'
 				value={value}
